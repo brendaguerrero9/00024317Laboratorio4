@@ -68,7 +68,7 @@ Matrix createLocalK(int element,mesh &m){
 
     row3.push_back(E.at(0).at(0)); 
     row3.push_back(E.at(0).at(1));
-    row3.push_back(F.at(0).at(1));
+    row3.push_back(F.at(0).at(0));
     row3.push_back(F.at(0).at(1));
 
     row4.push_back(E.at(1).at(0)); 
