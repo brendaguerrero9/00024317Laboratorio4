@@ -7,8 +7,8 @@ void createLocalA(Matrix &A,mesh m){
 void createLocalB(Matrix &B,mesh m){
     float l = m.getParameter(ELEMENT_LENGTH);
     float kappa = m.getParameter(KAPPA);
-    B.at(0).at(0) +=  kappa/1;  B.at(0).at(1) += - kappa/1;
-    B.at(1).at(0) += - kappa/1;  B.at(1).at(1) += kappa/1;
+    B.at(0).at(0) +=  kappa/l;  B.at(0).at(1) += - kappa/l;
+    B.at(1).at(0) += - kappa/l;  B.at(1).at(1) += kappa/l;
 }
 
 void createLocalC(Matrix &C,mesh m){
@@ -20,8 +20,8 @@ void createLocalC(Matrix &C,mesh m){
 void createLocalD(Matrix &D,mesh m){
     float l = m.getParameter(ELEMENT_LENGTH);
     float upsilon = m.getParameter(UPSILON);
-    D.at(0).at(0) +=  upsilon/1;  D.at(0).at(1) += - upsilon/1;
-    D.at(1).at(0) += - upsilon/1;  D.at(1).at(1) += upsilon/1;
+    D.at(0).at(0) +=  upsilon/l;  D.at(0).at(1) += - upsilon/l;
+    D.at(1).at(0) += - upsilon/l;  D.at(1).at(1) += upsilon/l;
 }
 
 void createLocalE(Matrix &E,mesh m){
