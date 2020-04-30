@@ -1,7 +1,7 @@
 void createLocalA(Matrix &A,mesh m){
     float tau = m.getParameter(TAU);
-    A.at(0).at(0) += -tau/2;  A.at(0).at(1) += tau/2;
-    A.at(1).at(0) += -tau/2;  A.at(1).at(1) += tau/2;
+    A.at(0).at(0) += -tau/8;  A.at(0).at(1) += tau/8;
+    A.at(1).at(0) += -tau/8;  A.at(1).at(1) += tau/8;
 }
 
 void createLocalB(Matrix &B,mesh m){
