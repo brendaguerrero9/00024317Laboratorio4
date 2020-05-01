@@ -108,6 +108,7 @@ class mesh{
         void setParameters(float l,float tau,float kappa,float lambda,float upsilon, float psi, float alpha, float delta,float eta){
             parameters[ELEMENT_LENGTH]=l;
             parameters[TAU]=tau;
+            parameters[KAPPA]=kappa;
             parameters[LAMBDA]=lambda;
             parameters[UPSILON]=upsilon;
             parameters[PSI]=psi;
